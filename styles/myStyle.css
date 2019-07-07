@@ -1,0 +1,1835 @@
+@font-face {
+    font-family: 'asakim_bold-webfont';
+    src: url('../fonts/asakim_bold-webfont.eot');
+    src: url('../fonts/asakim_bold-webfont.eot') format('embedded-opentype');
+    src: url('../fonts/asakim_bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'asakim_bold-webfont';
+    src: url('../fonts/asakim_bold-webfont.eot') format('embedded-opentype');
+    src: url('../fonts/asakim_bold-webfont.woff') format('woff');
+}
+
+/*הגדרה רספונסיבית לאתר*/
+#container {
+    width: 1366px !important;
+    margin: auto 0;
+    padding-right: 0 !important;
+}
+
+    /*הגדרת הכתב לכלל התוכן באתר*/
+    #container * {
+        font-family: 'asakim_bold-webfont';
+    }
+
+/*הגדרת הכתב מימן לשמאל*/
+body {
+    direction: rtl;
+    color: black;
+}
+
+/*עיצוב לקישורים לא פעילים באתר*/
+.notActive {
+    cursor: not-allowed !important;
+}
+
+/*עיצוב לוגו האתר*/
+#logo {
+    width: 150px;
+    height: 100px;
+}
+
+/*עיצוב תפריט ראשי*/
+#maimNav {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1000000;
+   
+}
+#maimNav ul {
+    border-bottom: 2px solid black;
+}
+    /*עיצוב תפריט ניווט ראשי בעמוד הבית, הורדת אלמנטים של הרשימה*/
+    header nav ul {
+        list-style: none;
+        background-color: white;
+        height: 107px;
+        width: 1366px;
+        
+    }
+
+    /*הגדרות עיצוביות לתפריט ניווט ראשי בעמוד הבית*/
+    header nav ul li {
+        display: inline-block;
+        margin: 0px 85px;
+        font-size: 20pt;
+    }
+
+    /*הגדרות עיצוב ללינקים שבתפריט הניווט הראשי*/
+    header nav ul a {
+        color: black;
+        
+    }
+
+        /*הגדרות עיצוב למצב מעבר עכבר ללינקים שבתפריט הניווט הראשי*/
+        header nav ul a:hover {
+            color: black;
+        }
+
+/*עיצוב האופציה של דילוג לתוכן -נגישות*/
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    #skip li {
+        list-style-type: none
+    }
+
+    #skip a {
+        position: absolute;
+        right: 450px;
+        top: 30px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            z-index: 9999999999999999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: -2px !important;
+            font: bold 30px "Arial", "Freesans", sans-serif !important;
+            color: #000000;
+            background: transparent url(transparent.png) repeat scroll 0 0;
+            
+        }
+
+/*עיצוב לקרוסלה*/
+#carouselExampleSlidesOnly {
+    margin-top: 107px;
+}
+/*עיצוב טקסטוקה*/
+#texturehomepage {
+    float: left;
+    background-image: url('../imeges/headerPic.jpeg');
+    background-size: cover;
+    height: 450px;
+    width: 456px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+/*עיצוב רקע לבן לטקסטורה*/
+#backcolor {
+    background-color: rgba(255, 255, 255, 0.70);
+    height: 304px;
+    width: 361px;
+    position: relative;
+    right: 45px;
+    top: 15px;
+    text-align: center;
+    background-image: url(../imeges/icons/megapon.png);
+    background-size: 85px 85px;
+    background-repeat: no-repeat;
+    background-position: 276px 220px;
+}
+/*עיצוב h1 header*/
+#h1homepage {
+    font-size: 25pt;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 52px;
+    margin-bottom: 20px;
+}
+
+/*עיצוב רקע לבן לטקסטורה*/
+#background {
+    background-image: url('../imeges/headerPic.jpeg');
+    height: 480px;
+    width: 455px;
+    float: left;
+}
+
+/*עיצוב הכפתורים בתוך ההקרוסלה*/
+.btncarousel {
+    height: 50px;
+    width: 125px;
+    font-size: 22pt;
+    position: relative;
+    right: 30px;
+    background-color:white;
+}
+
+    .btncarousel a {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+/*עיצוב כפתורים מתחלפים*/
+.dresse {
+    margin-top: -143px;
+    margin-right: 110px;
+    padding-bottom: 7px;
+}
+
+#h2homepage1 {
+    text-align: center;
+    margin: 80px 0px;
+}
+
+
+/*עיצוב כותרות בעמוד בית*/
+#h2homepage2 {
+    text-align: center;
+    margin: 60px 0px;
+}
+/*עיצוב אייקון סימן שאלה*/
+#QuestionMark {
+    width: 72px;
+    height: 50px;
+    margin: -125px 740px 95px 0px;
+    background-image: url(../imeges/icons/queeshtenMark.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+
+/*עיצוב גודל תמונות שווקים מומלצים בעמוד הבית*/
+.mostHomePage {
+    display: inline-block;
+    height: 231px;
+    width: 350px;
+}
+
+/*עיצוב סקשיינים של הכי הכי*/
+.sectionH {
+    width: 363px;
+    display: inline-block;
+    margin: 3px -14px 0;
+}
+
+    /*עיצוב כותרת הכי הכי*/
+    .sectionH h3 {
+        background-image: url(../imeges/icons/misgert.png);
+        background-size: 183px 63px;
+        background-repeat: no-repeat;
+        height: 63px;
+        width: 183px;
+        font-size: 20pt;
+        text-align: center;
+        padding-top: 15px;
+        margin-right: 85px;
+        margin-top: -45px;
+        position: absolute;
+    }
+
+    /*עיצוב כפתורי שווקים בהכי הכי*/
+    .sectionH a {
+        background-color: rgba(255, 255, 255,0.70);
+        margin: -60px 89px 54px 0px;
+        color: black;
+        text-align: center;
+        width: 175px;
+        font-size: 18pt;
+    }
+/*עיצוב אייקון האשטאג*/
+#hastag {
+    width: 50px;
+    height: 50px;
+    background-image: url(../imeges/icons/shulmit_optimized.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin: 67px 575px -106px 10px;
+}
+
+    #hastag:hover {
+        width: 50px;
+        height: 50px;
+        background-image: url(../imeges/icons/shulmit_optimized.png);
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+        margin: 67px 575px -106px 10px;
+        transform: rotateZ(-22deg);
+    }
+/*עיצוב פסקת אינסטגרם*/
+.peskaHastag {
+    font-family: Calibri !important;
+    font-weight: bold;
+    font-size: 18pt;
+    display: inline-block;
+    text-align: center;
+    margin-right: 118px 0 0;
+    margin: 0px 385px 0 0px;
+}
+/*עיצוב אייקונים מקפים*/
+.makaf {
+    width: 35px;
+    height: 20px;
+    background-image: url(../imeges/icons/kavSmall_optimized.png);
+    background-size: 30px 14px;
+    background-repeat: no-repeat;
+    height: 14px;
+    display: inline-block;
+    margin: -5px 13px 0px -353px;
+}
+/*עיצוב אייקון מצלמה*/
+#camara {
+    width: 70px;
+    height: 70px;
+    background-image: url(../imeges/icons/camera_optimized.png);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    margin: -55px 983px 34px 0;
+}
+
+    #camara:hover {
+        width: 70px;
+        height: 70px;
+        background-image: url(../imeges/icons/camera_optimized.png);
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        margin: -55px 983px 34px 0;
+        transform: rotateY(64.1deg);
+    }
+
+
+
+/*עיצוב תמונות אינסטגרם*/
+#userPhoto {
+    width: 1366px;
+    height: 600px;
+    display: inline-block;
+    float: right;
+}
+
+    #userPhoto li {
+        display: inline-block;
+        float: right;
+    }
+
+        #userPhoto li div {
+            width: 455px;
+            height: 300px;
+            background-size: 455px 300px;
+            display: inline-block;
+            float: right;
+        }
+
+#userPhoto1 {
+    background-image: url('../imeges/ramle/IMG_8350.jpg');
+    -webkit-transition: height 0.5s linear;
+    -moz-transition: height 0.5s linear;
+    -ms-transition: height 0.5s linear;
+    -o-transition: height 0.5s linear;
+    transition: height 0.5s linear;
+}
+
+    #userPhoto1:hover {
+        background-image: url('../imeges/icons/hashtag2.jpeg');
+        background-size: 455px 300px;
+        width: 455px;
+        height: 300px;
+    }
+
+#userPhoto2 {
+    background-image: url('../imeges/ramle/IMG_8334.jpg');
+}
+
+    #userPhoto2:hover {
+        background-image: url('../imeges/icons/hashtag3.jpeg');
+        background-size: 455px 300px;
+    }
+
+#userPhoto3 {
+    background-image: url('../imeges/ramle/IMG_8312.jpg');
+}
+
+    #userPhoto3:hover {
+        background-image: url('../imeges/icons/hasgtag4.jpeg');
+        background-size: 455px 300px;
+    }
+
+#userPhoto4 {
+    background-image: url('../imeges/peshpeshim/IMG_8398.jpg');
+}
+
+    #userPhoto4:hover {
+        background-image: url('../imeges/icons/hashtag5.jpeg');
+        background-size: 455px 300px;
+    }
+
+#userPhoto5 {
+    background-image: url('../imeges/peshpeshim/IMG_8440.jpg');
+}
+
+    #userPhoto5:hover {
+        background-image: url('../imeges/icons/hashtag7.jpeg');
+        background-size: 455px 300px;
+    }
+
+#userPhoto6 {
+    background-image: url('../imeges/peshpeshim/IMG_8415.jpg');
+}
+
+    #userPhoto6:hover {
+        background-image: url('../imeges/icons/hashtag6.jpeg');
+        background-size: 455px 300px;
+    }
+
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+
+
+/*עיצוב תפריט פנימי-עמוד מיקום ועמוד סגנון*/
+
+.insideNav {
+    background-image: url('../imeges/background style page.jpeg');
+    background-size: 305px;
+    height: 310px;
+    width: 1366px;
+    margin-top: 107px;
+}
+
+    .insideNav nav ul li {
+        display: inline-block;
+        margin: 10px 10px 0px 10px;
+        font-size: 20pt;
+    }
+
+    .insideNav ul a {
+        position: relative;
+        top: 15px;
+        right: 77px;
+        width: 85px;
+        font-size: 16pt;
+    }
+
+    .insideNav ul {
+        background-color: rgba(255, 255, 255, 0.70);
+        height: 210px;
+        width: 1000px;
+        position: absolute;
+        top: 175px;
+        right: 183px;
+        padding: 0px 120px;
+    }
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+
+/*עמוד סגנון*/
+
+/*עיצוב תמונות לתוך התפריט סגנון לפי ID*/
+.imagNavStayle {
+    height: 110px;
+    width: 150px;
+    background-repeat: no-repeat;
+}
+
+#staylenav ul li a {
+    position: relative;
+    top: 120px;
+    right: 100px;
+    width: 145px;
+}
+
+#staylenav ul li {
+    display: inline-block;
+    margin: 0px 0px;
+    font-size: 20pt;
+}
+
+/*תמונה אייקון אוכל*/
+#imagfood {
+    background-image: url(../imeges/icons/food_optimized.png);
+    width: 206px;
+    background-size: 50px;
+}
+
+/*תמונה אייקון אופנה*/
+#imagfashtion {
+    background-image: url(../imeges/icons/tshirt_optimized.png);
+    width: 220px;
+    margin-top: 22px;
+    background-size: 90px;
+}
+
+/*תמונה אייקון אומנות*/
+#imagart {
+    background-image: url(../imeges/icons/vase_optimized.png);
+    width: 212px;
+    background-size: 75px;
+}
+
+/*עיצוב כותרת עמוד תוכן*/
+.insideNav h1 {
+    text-align: center;
+    z-index: 100;
+}
+
+/*עיצוה כותרת כל חלק*/
+.h2section {
+    height: 720px;
+}
+    /*עיצוב הכותרות*/
+    .h2section h2 {
+        background-image: url('../imeges/icons/misgert.png');
+        height: 120px;
+        width: 357px;
+        text-align: center;
+        padding-top: 37px;
+        z-index: 110;
+    }
+/*מיקום של כל כותרת*/
+#h2food {
+    position: absolute;
+    right: 170px;
+    top: 630px;
+}
+
+#h2ofna {
+    position: absolute;
+    right: 170px;
+    top: 1455px;
+}
+
+#h2art {
+    position: absolute;
+    right: 170px;
+    top: 2280px
+}
+/*עיצוב פסקת הסבר לכל סגנון*/
+.h2section p {
+    position: relative;
+    right: 715px;
+    top: -370px;
+    width: 610px;
+    font-family: Calibri !important;
+    font-size: 20px;
+}
+
+/*רקע ירוק לרשימה*/
+.h2section nav {
+    list-style: none;
+    background-color: rgba(178, 210, 53, 0.80);
+    height: 450px;
+    width: 778px;
+    position: relative;
+    right: 585px;
+    top: -350px;
+    padding: 53px 67px;
+    display: block;
+    
+}
+
+    /*עיצוב רשימת השווקים*/
+    .h2section nav ul li {
+        display: inline-grid;
+        width: 300px;
+        padding: 10px 100px 10px 0px;
+    }
+
+        /*עיצוב כתב הקישור*/
+        .h2section nav ul li a {
+            color: black;
+            font-size: 22px;
+        }
+
+.styleImage{
+    background-repeat:no-repeat;
+    background-size:700px 470px;
+
+
+}
+
+/*עיצוב תמונת אוכל ומסעדות*/
+#foodimag {
+    background-image: url('../imeges/food.jpg');
+    height: 500px;
+    width: 686px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 110px;
+    z-index: 100;
+}
+/*עיצוב תמונה אופנה וטקסטיל*/
+#fashtionimag {
+    background-image: url('../imeges/ofna.jpg');
+    height: 500px;
+    width: 686px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 110px;
+    z-index: 100;
+}
+/*עיצוב תמונת אומנות ועתיקות*/
+#artimag {
+    background-image: url('../imeges/art.jpg');
+    height: 500px;
+    width: 686px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 110px;
+    z-index: 100;
+}
+#foodsection{
+    height:107px;
+}
+#fashionsection {
+    height: 107px;
+}
+#artsection{
+    height:107px;
+}
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/*עמוד מיקום*/
+
+/*עיצוב תמונות לתפריט מיקום*/
+#imagZfon {
+    background-image: url('../imeges/ZFON.png');
+    width: 130px;
+}
+
+#imagJaru {
+    background-image: url('../imeges/JERU.png');
+    width: 130px;
+}
+
+#imagMerkaz {
+    background-image: url('../imeges/MERKAZ.png');
+    width: 130px;
+}
+
+#imagDarom {
+    background-image: url('../imeges/DAROM.png');
+    width: 130px;
+}
+
+.imagNavPlace {
+    height: 100px;
+    width: 65px;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+/*עיצוב הסקשיינים של מיקום*/
+.placeSection {
+    height: 830px;
+    width: 1406px;
+    margin-right: 40px;
+}
+
+    .placeSection h2 {
+        background-image: url('../imeges/icons/misgert.png');
+        height: 120px;
+        width: 357px;
+        text-align: center;
+        margin-top: 60px;
+        padding-top: 37px;
+        z-index: 110;
+        position: absolute;
+        right: 495px;
+    }
+
+    .placeSection ul {
+        list-style: none;
+    }
+
+        .placeSection ul li {
+            display: inline-block;
+            float: right;
+            position: relative;
+            left: 39px;
+            top: 150px;
+        }
+
+
+    .placeSection li div {
+        height: 300px;
+        width: 455px;
+        transform: matrix(1,0,0,1,0,0);
+        transition: transform 0.5s cubic-bezier(0.60,1,0.70,0) 0s;
+    }
+
+
+        /*עמוד מיקום עיצוב הקישורים של השווקים*/
+        .placeSection li div a {
+            color: black;
+            font-size: 24px;
+            display: inline-block;
+            width: 455px;
+            height: 45px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.70);
+            margin-top: 266px;
+            background-image: url(../imeges/icons/place.png);
+            background-repeat: no-repeat;
+            background-size: 63px 90px;
+            background-position: 195px 165px;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+
+
+
+/*עיצוב תמונות ומצב מעבר עכבר של התמונות בעמוד מיקום*/
+.placeImage{
+    background-repeat:no-repeat;
+    height:300px;
+    width:455px;
+    background-size:455px 300px;
+}
+
+#haifaimg {
+    background-image: url('../imeges/placepage/1.1.jpg');
+    
+}
+
+    #haifaimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#dalietimg {
+    background-image: url('../imeges/placepage/1.2.jpg');
+}
+
+    #dalietimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#zfonh2 {
+    background-image: url('../imeges/placepage/1.jpg');
+}
+
+#tarshihaimg {
+    background-image: url('../imeges/placepage/1.3.jpg');
+}
+
+    #tarshihaimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#karmielimg {
+    background-image: url('../imeges/placepage/1.4.jpg');
+}
+
+    #karmielimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#acoimg {
+    background-image: url('../imeges/placepage/1.5.jpg');
+}
+
+    #acoimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#mahaneimg {
+    background-image: url('../imeges/placepage/4.1.jpg');
+}
+
+    #mahaneimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#jeruh2 {
+    background-image: url('../imeges/placepage/4.jpg');
+}
+
+#germanyimg {
+    background-image: url('../imeges/placepage/4.2.jpg');
+}
+
+    #germanyimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#jeruavira1 {
+    background-color: rgba(255, 200, 37, 0.80);
+}
+
+    #jeruavira1:hover {
+        background-color: rgba(255, 200, 37, 0.80);
+        background-image: url(../imeges/icons/bag.png);
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+#oldcityimg {
+    background-image: url('../imeges/placepage/4.3.jpg');
+}
+
+    #oldcityimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#jeruavira2 {
+    background-color: rgba(247, 129, 0, 0.80);
+}
+
+    #jeruavira2:hover {
+        background-image: url('../imeges/hawaii.jpeg');
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+#fleaimg {
+    background-image: url('../imeges/placepage/2.1.jpg');
+}
+
+    #fleaimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#merkazh2 {
+    background-image: url('../imeges/placepage/2.jpg');
+}
+
+#ramlaimg {
+    background-image: url('../imeges/placepage/2.5.jpg');
+}
+
+    #ramlaimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#carmelimg {
+    background-image: url('../imeges/placepage/2.2.jpg');
+}
+
+    #carmelimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#sharonaimg {
+    background-image: url('../imeges/placepage/2.4.jpg');
+}
+
+    #sharonaimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#teraimg {
+    background-image: url('../imeges/placepage/2.3.jpg');
+}
+
+    #teraimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#beerimg {
+    background-image: url('../imeges/placepage/3.1.jpg');
+}
+
+    #beerimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#daromh2 {
+    background-image: url('../imeges/placepage/3.jpg');
+}
+
+#kiryatimg {
+    background-image: url('../imeges/placepage/3.3.jpg');
+}
+
+    #kiryatimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#peddlersimg {
+    background-image: url('../imeges/placepage/3.5.jpg');
+}
+
+    #peddlersimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#ashdodimg {
+    background-image: url('../imeges/placepage/3.2.jpg');
+}
+
+    #ashdodimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+#eilatimg {
+    background-image: url('../imeges/placepage/3.4.jpg');
+}
+
+    #eilatimg:hover a {
+        color: black;
+        font-size: 24px;
+        display: inline-block;
+        width: 455px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.70);
+        margin-top: 0px;
+        height: 300px;
+    }
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/*עיצוב הפוטר*/
+footer {
+    width: 1366px;
+    text-align: left;
+    font-size: 20pt;
+    clear: both;
+    z-index: 19303;
+    border-top: 2px solid black;
+}
+
+    footer a {
+        color: black !important;
+        margin: 0px 25px;
+        font-family: Asakim;
+    }
+
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/*עיצוב דפי החובה*/
+
+/*עיצוב הטקסטורה */
+.mustpagetextura {
+    background-image: url('../imeges/background style page.jpeg');
+    background-size: 305px;
+    height: 200px;
+    width: 1366px;
+    margin-top: 107px;
+}
+
+/*עיצוב כותרת העמוד*/
+.mustpageh1 {
+    background-color: rgba(255, 255, 255, 0.70);
+    height: 105px;
+    width: 1000px;
+    position: absolute;
+    top: 165px;
+    right: 183px;
+    padding: 25px 120px;
+    text-align: center;
+}
+/*עיצוב רקע עמודי החובה*/
+.mustpage {
+    background-image: url('../imeges/backmustpage.jpg');
+    background-size:1366px 820px;
+    background-repeat: no-repeat;
+    width: 1366px;
+    height: 820px;
+}
+
+    .mustpage h2 {
+        font-size: 22pt;
+        text-align: right;
+    }
+
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/*עיצוב עמוד צור קשר*/
+/*עיצוב טופס צור קשר*/
+label {
+    font-size: 16pt;
+    width: 250px;
+    margin: 10px;
+}
+
+.formbox {
+    width: 270px;
+    font-family: Calibri !important;
+}
+
+#Send {
+    margin-right: 85px;
+    width: 100px;
+}
+
+form {
+    display: inline-block;
+    float: right;
+    margin-right: -430px;
+    margin-top: 60px;
+}
+
+#ztorpage {
+    background-color: rgba(255, 255, 255, 0.70);
+    width: 1000px;
+    height: 530px;
+    padding: 20px 75px 20px 20px;
+    float: right;
+    margin-right: 183px;
+    margin-top: 50px;
+}
+
+    #ztorpage section {
+        padding-top: 25px;
+        padding-right: 20px;
+    }
+
+    #ztorpage p {
+        font-size: 16pt;
+        font-family: Calibri !important;
+    }
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/*עיצוב עמוד מפת האתר*/
+#webmap {
+    background-color: rgba(255, 255, 255, 0.70);
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    right: 183px;
+    top: 420px;
+}
+
+    #webmap ul {
+        list-style: none;
+        padding: 20px 40px 20px 20px;
+        width: 300px;
+    }
+
+    #webmap nav ul li {
+        display: block;
+        width: 120px;
+    }
+
+    #webmap a {
+        color: black !important;
+        font-size: 16pt;
+        font-family: Calibri !important;
+    }
+
+    #webmap h3 {
+        font-size: 18pt;
+    }
+
+.webmaph2 {
+    display: inline-block;
+    float: right;
+    width: 280px;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+
+#webmap section section {
+    display: inline-block;
+    float: right;
+    width: 200px;
+}
+
+#jer {
+    margin-top: -495px;
+    margin-right: 320px;
+}
+
+#dar {
+    margin-top: -250px;
+    margin-right: 320px;
+}
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/*/עיצוב עמוד אודות/*/
+/*/עיצוב פירורי הלחם בהתאם לעמוד/*/
+
+
+/*עיצוב פסקת מזה שוקה*/
+#odotpage section {
+    padding-right: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#shuka {
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+/*/עיצוב ומיקום כל הדיבים של הכותרות שמות/*/
+.imgName {
+    padding-right: 30px;
+    margin-top: 151px;
+    color: black;
+    font-size: 14pt;
+}
+
+/*/עיצוב ומיקום כל הדיבים של התמונות פנים/*/
+.selfImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-right: 15px;
+    position: inherit;
+    display: inline-block;
+    opacity: 0.9;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+
+    /*//הגדרת מצב מעבר עכשיועל גבי התמונות פנים*/
+    .selfImg:hover {
+        -webkit-transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+    }
+
+/*הוספת תמונת פנים חן */
+
+#selfImg1 {
+    background-image: url('../imeges/chen-min.png');
+    background-size: cover;
+}
+
+/*/הוספת תמונת פנים עדן/*/
+#selfImg2 {
+    background-image: url('../imeges/ededn-min.png');
+    background-size: cover;
+}
+
+/*/הוספת תמונת פנים רז/*/
+#selfImg3 {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    top: 10px;
+    background-image: url('../imeges/razcirclepic-min.png');
+    background-size: cover;
+}
+
+/*/מיקום ספציפי לכיתוב רז בגלל גודל התמונה/*/
+#raz {
+    position: relative;
+    bottom: 8px;
+}
+
+/*עיצוב רקע לבן לעמוד*/
+#odotpage {
+    background-color: rgba(255, 255, 255, 0.70);
+    width: 1000px;
+    height: 725px;
+    position: absolute;
+    right: 183px;
+    top: 420px;
+}
+
+    #odotpage h3 {
+        font-size: 18pt;
+    }
+/*עיצוב מי אנחנו*/
+#whous {
+    float: left;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+    #whous ul {
+        list-style: none;
+    }
+
+        #whous ul li {
+            display: block;
+            width: 170px;
+        }
+
+/*עיצוב פסקאות התוכן */
+#odotpage p {
+    font-family: Calibri !important;
+    font-size: 16pt;
+    width: 717px;
+}
+
+
+#courses li {
+    width: 300px;
+    font-family: Calibri;
+    font-size: 14pt;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+
+#pitoh li {
+    display: inline-block;
+    float: right;
+    width: 189px;
+}
+
+#odotpage a {
+    color: black !important;
+    font-size: 16pt;
+}
+/*/עיצוב ומיקום סמל המכון/*/
+#HIT {
+    width: 150px;
+    height: 100px;
+    background-image: url('../imeges/logoHIT(PNG).png');
+    background-size: cover;
+    float: left;
+    display: inline-block;
+    position: relative;
+    bottom: 145px;
+    left: 200px;
+}
+#creditp {
+    margin-right: 30px;
+    padding-top: 15px;
+    clear: both;
+}
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/*עיצוב עמוד קרדיט*/
+#credit {
+    background-color: rgba(255, 255, 255, 0.70);
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    right: 183px;
+    top: 420px;
+    padding-top: 20px;
+    padding-right: 45px;
+}
+
+    #credit li{
+        margin-right:30px;
+        margin-top:20px;
+    }
+    #credit a {
+        color: black !important;
+        font-size: 16pt;
+        font-family:Calibri!important;
+    }
+
+
+    /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+    /*עיצוב עמוד יצוג*/
+#interactive {
+    background-color: rgba(255, 255, 255, 0.70);
+    width: 1000px;
+    height: 725px;
+    position: absolute;
+    right: 183px;
+    top: 420px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+
+    #interactive p {
+        font-family: Calibri !important;
+        font-size: 16pt;
+    }
+
+    #interactive a {
+        font-size: 16pt;
+        color: black !important;
+    }
+
+/*עיצוב יצוג אינטרקטיבי*/
+#canvas {
+    height: 500px !important;
+    width: 1000px !important;
+}
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/*עיצוב עמוד תוכן שוק רמלה עיצוב תמונת רקע עליונה*/
+.headerPic {
+    width: 911px;
+    height: 410px;
+    display: inline-block;
+    margin-top: 107px;
+}
+
+/*עיצוב טקסטורה בהדר*/
+.textureRamle {
+    background-image: url(../imeges/back.png);
+    background-size: cover;
+    width: 455px;
+    height: 410px;
+    display: inline-block;
+    float: left;
+    margin-top: 107px;
+}
+
+/*עיצוב מסגרת לבנה לכותרת ומגפון*/
+.mesgertH {
+    height: 265px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.70);
+    margin: 70px 73px 10px 10px;
+    background-image: url(../imeges/icons/megapon.png);
+    background-size: 85px 85px;
+    background-repeat: no-repeat;
+    background-position: 215px 180px;
+}
+/*עיצוב כותרת שוק רמלה*/
+.h1Ramle {
+    font-size: 25pt;
+    text-align: center;
+    position: relative;
+    top: 55px;
+}
+
+
+/*עיצוב תמונת שוק רמלה בפסקת פתיחה*/
+.shokePic {
+    width: 455px;
+    height: 295px;
+    margin-right: 100px;
+    margin-top: 45px;
+}
+
+/*עיצוב פסקה על שוק רמלה*/
+#shokePRamle {
+    font-family: Calibri !important;
+    font-size: 18pt;
+    background-color: rgba(178, 210, 53, 0.80);
+    padding: 31px 143px 0px 55px;
+    margin: -149px 430px 80px 0px;
+    height: 253px;
+    width: 792px;
+}
+
+/*עיצוב כותרת אסור לפספס בשוק*/
+.NotMissed {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/*עיצוב אייקון סימן שאלה*/
+#QuestionMarkRamle {
+    width: 50px;
+    height: 50px;
+    margin: -124px 876px 90px 0px;
+    background-image: url(../imeges/icons/queeshtenMark.png);
+    background-size: 50px 50px;
+}
+
+/*עיצוב סקשיין אסור לפספס*/
+.sectionH2 h3 {
+    background-image: url(../imeges/icons/misgert.png);
+    background-size: 195px 70px;
+    background-repeat: no-repeat;
+    height: 68px;
+    width: 195px;
+    font-family: Calibri !important;
+    font-size: 15pt;
+    text-align: center;
+    padding-top: 15px;
+    margin-right: 85px;
+    margin-top: -45px;
+    position: absolute
+}
+
+.sectionH2 {
+    display: inline-block;
+    float: right;
+    margin-bottom: 80px;
+}
+
+/*עיצוב גודל תמונות רמלה הכי מומלץ*/
+.mostRamle {
+    display: inline-block;
+    height: 231px;
+    width: 341px
+}
+
+/*עיצוב הכי מומלצים רמלה*/
+#ramle1 {
+    background-image: url('../imeges/ramle/IMG_8387.jpg');
+    background-size: 341px 231px;
+    height: 231px;
+    width: 341px;
+}
+/*מעבר עכבר להכי מומלצים רמלה*/
+    #ramle1:hover {
+        background-image: url('../imeges/ramle/hoverNagi_320x225.jpg');
+        background-size: 341px 231px;
+        height: 231px;
+        width: 341px;
+    }
+
+
+#ramle2 {
+    background-image: url('../imeges/ramle/IMG_8343.jpg');
+    background-size: 341px 231px;
+    height: 231px;
+    width: 341px;
+}
+
+    #ramle2:hover {
+        background-image: url('../imeges/ramle/hoverShasha_320x225.jpg');
+        background-size: 341px 231px;
+        height: 231px;
+        width: 341px;
+    }
+
+
+#ramle3 {
+    background-image: url('../imeges/ramle/IMG_8296.jpg');
+    background-size: 341px 231px;
+    height: 231px;
+    width: 341px;
+}
+
+    #ramle3:hover {
+        background-image: url('../imeges/ramle/hoverMeir_320x225.jpg');
+        background-size: 341px 231px;
+        height: 231px;
+        width: 341px;
+    }
+
+#ramle4 {
+    background-image: url('../imeges/ramle/IMG_8324.jpg');
+    background-size: 341px 231px;
+    height: 231px;
+    width: 341px;
+}
+
+    #ramle4:hover {
+        background-image: url('../imeges/ramle/hoverCarmel_320x225.jpg');
+        background-size: 341px 231px;
+        height: 231px;
+        width: 341px;
+    }
+
+
+
+
+    .sectionID {
+        clear: both;
+        margin-top: 30px;
+    }
+
+/*עיצוב כותרת מה תרצו לדעת*/
+.NotMissed2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*עיצוב אייקון סימן שאלה לכותרת מה תרצו לדעת*/
+.QuestionMark2 {
+    width: 50px;
+    height: 50px;
+    margin: -53px 790px 18px 0px;
+    background-image: url('../imeges/icons/queeshtenMark.png');
+    background-size: 50px 50px;
+}
+
+/*עיצוב מסגרת למה תרצו לדעת*/
+.texturId {
+    width: 1366px;
+    height: 450px;
+    background-image: url('../imeges/icons/mesgertId.png');
+    background-size: 1366px 450px;
+    margin: 40px 0px 50px 0;
+}
+
+/*תחילת עיצוב אייקוני מידע לכותרת מה תרצו לדעת*/
+.ramleID1 {
+    padding: 63px 32px 0px 0;
+    height: 251px;
+    width: 200px;
+    margin: 0 50px 0 0;
+}
+
+.iconStyle {
+    height: 68px;
+    width: 175px;
+    background-size: 174px;
+    background-image: url(../imeges/icons/segnon.png);
+}
+
+/*עיצוב אייקון שעות פתיחה*/
+.ramleID2 {
+    padding: 0 32px 0px 0;
+    height: 251px;
+    width: 230px;
+    margin: 0 50px 0 0;
+}
+
+/*עיצוב שעות פתיחה*/
+.iconOpen {
+    height: 69px;
+    width: 68px;
+    background-image: url(../imeges/icons/clock_optimized.png);
+    background-size: 67px;
+}
+
+/*עיצוב מקום חניה*/
+.ramleID3 {
+    height: 251px;
+    width: 400px;
+    margin: -437px 400px 0 0;
+}
+/*עיצוב אייקון חניה*/
+.iconP {
+    height: 69px;
+    width: 49px;
+    background-image: url(../imeges/icons/parking_optimized.png);
+    background-size: 49px;
+}
+
+/*עיצוב שעות עומס*/
+.ramleID4 {
+    height: 251px;
+    width: 400px;
+    margin: -64px 400px 0 0;
+}
+/*עיצוב אייקון שעות עומס*/
+.iconMore {
+    height: 67px;
+    width: 68px;
+    background-size: 72px;
+    background-image: url(../imeges/icons/laod_optimized.png);
+}
+
+/*עיצוב נגישות*/
+.ramleID5 {
+    height: 251px;
+    width: 400px;
+    margin: -437px 750px 0 0;
+}
+/*עיצוב אייקון נגישות*/
+.iconAcss {
+    height: 75px;
+    width: 71px;
+    background-size: 75px;
+    background-image: url(../imeges/icons/handicap_optimized.png);
+    margin-bottom: -9px;
+}
+
+/*עיצוב מפה*/
+.ramleID6 {
+    height: 200px;
+    width: 200px;
+    margin: -254px 1050px 0 0;
+}
+/*עיצוב דיב מפה*/
+.map {
+    height: 250px;
+    width: 250px;
+}
+
+/*עיצוב פסקאות תוכן מה תרצו לדעת*/
+.pID {
+    margin-right: 80px;
+    margin-top: -69px;
+    font-family:Calibri !important;
+    font-size:13pt;
+}
+
+
+/*עיצוב תמונת פוטר 1*/
+#footerPic1 {
+    background-image: url('../imeges/ramle/IMG_8287.jpg');
+    background-size: 460px 300px;
+    width: 460px;
+    height: 300px;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+/*עיצוב תמונת פוטר 2*/
+#footerPic2 {
+    background-image: url('../imeges/ramle/IMG_8375-2.jpg');
+    background-size: 460px 300px;
+    width: 460px;
+    height: 300px;
+    display: inline-block;
+    margin-right: -5px;
+    margin-top: 80px;
+}
+
+/*עיצוב תמונת פוטר 3*/
+#footerPic3 {
+    background-image: url('../imeges/ramle/IMG_8362.jpg');
+    background-size: 460px 300px;
+    width: 460px;
+    height: 300px;
+    display: inline-block;
+    margin-right: -19px;
+    margin-top: 80px;
+}
+
+/*עיצוב קו תחתון פוטר*/
+.footerLine {
+    width: 1366px;
+    height: 10px;
+    background-image: url('../imeges/icons/kav_optimized.png');
+    background-size: 1366px 10px;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/*עיצוב עמוד שוק הפשפשים*/
+
+/*עיצוב אייקון סימן שאלה בכותרת הראשונה */
+#QuestionMarkPishpeshim {
+    width: 50px;
+    height: 50px;
+    margin: -125px 900px 100px 0px;
+    background-image: url(../imeges/icons/queeshtenMark.png);
+    background-size: 50px 50px;
+}
+
+
+/*עיצוב פסקה על שוק פשפשים*/
+#shokePPishpesh {
+    font-family: Calibri !important;
+    font-size: 18pt;
+    background-color: rgba(178, 210, 53, 0.80);
+    padding: 45px 152px 0px 45px;
+    margin: -159px 430px 80px 0px;
+    height: 253px;
+    width: 792px;
+}
+
+
+/*עיצוב תמונות השווקים למטה*/
+#footerPic1P {
+    background-image: url('../imeges/peshpeshim/IMG_8424.jpg');
+    background-size: 460px 300px;
+    width: 460px;
+    height: 300px;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+#footerPic2P {
+    background-image: url('../imeges/peshpeshim/IMG_8402.jpg');
+    background-size: 460px 300px;
+    width: 460px;
+    height: 300px;
+    display: inline-block;
+    margin-right: -5px;
+    margin-top: 80px;
+}
+
+
+#footerPic3P {
+    background-image: url('../imeges/peshpeshim/IMG_8439.jpg');
+    background-size: 460px 300px;
+    width: 460px;
+    height: 300px;
+    display: inline-block;
+    margin-right: -19px;
+    margin-top: 80px;
+}
+
+/*עיצוב תמונות מומלצים פשפשים*/
+#pesh1 {
+    background-image: url('../imeges/peshpeshim/IMG_8503.jpg');
+    background-size: 341px 231px;
+    height: 231px;
+    width: 341px;
+}
+    /*עיצוב מעבר עכבר מומלצים פשפשים*/
+    #pesh1:hover {
+        background-image: url('../imeges/peshpeshim/hoverMalabi_320x226 (1).jpg');
+        background-size: 341px 231px;
+        height: 231px;
+        width: 341px;
+    }
+
+#pesh2 {
+    background-image: url('../imeges/peshpeshim/IMG_8463.jpg');
+    background-size: 341px 231px;
+    height: 231px;
+    width: 341px;
+}
+
+    #pesh2:hover {
+        background-image: url('../imeges/peshpeshim/hoverAkbar.jpg');
+        background-size: 341px 231px;
+        height: 231px;
+        width: 341px;
+    }
+
+#pesh3 {
+    background-image: url('../imeges/peshpeshim/IMG_8420.jpg');
+    background-size: 341px 231px;
+    height: 231px;
+    width: 341px;
+}
+
+    #pesh3:hover {
+        background-image: url('../imeges/peshpeshim/hoverGins_320x226.jpg');
+        background-size: 341px 231px;
+        height: 231px;
+        width: 341px;
+    }
+
+#pesh4 {
+    background-image: url('../imeges/peshpeshim/IMG_8476.jpg');
+    background-size: 341px 231px;
+    height: 231px;
+    width: 341px;
+}
+
+    #pesh4:hover {
+        background-image: url('../imeges/peshpeshim/hoverBamboo_320x226.jpg');
+        background-size: 341px 231px;
+        height: 231px;
+        width: 341px;
+    }
+/*עיצוב מיקום משתמש*/
+.here {
+    text-decoration: underline;
+}
+/*עיצוב פירורי לחם*/
+.breadcrumb li {
+    font-size: 15pt;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+}
+
+    .breadcrumb li a {
+        color: black !important;
+    }
+
+/*עיצוב כתפורים כללי*/
+.bott {
+    background-color: rgba(255,255,255,1.0);
+}

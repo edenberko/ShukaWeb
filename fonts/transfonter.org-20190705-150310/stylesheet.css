@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Asakim';
+    src: url('Asakim.eot');
+    src: url('Asakim.eot?#iefix') format('embedded-opentype'),
+        url('Asakim.woff2') format('woff2'),
+        url('Asakim.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
